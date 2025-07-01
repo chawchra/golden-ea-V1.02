@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Trigger EA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #ffd700;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    h1, h2 {
+      color: #000;
+    }
+    .features {
+      margin: 20px 0;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+    .price {
+      background: #ffd700;
+      color: black;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .payment {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .qr {
+      max-width: 200px;
+      margin: 10px auto;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #777;
+    }
+    .lang-toggle {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .lang-toggle button {
+      margin: 0 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #ffd700;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Golden Trigger EA</h1>
+    <p id="subtitle-ar">إكسبرت ذهبي للذهب – مرخّص – مربح</p>
+    <p id="subtitle-en" style="display:none;">A Golden EA for Gold – Licensed & Profitable</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button onclick="setLang('ar')">🇸🇦 العربية</button>
+    <button onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+
+  <div class="container">
+    <h2 id="why-ar">لماذا Golden Trigger EA؟</h2>
+    <h2 id="why-en" style="display:none;">Why Golden Trigger EA?</h2>
+
+    <ul class="features" id="features-ar">
+      <li>📊 إدارة رأس مال بنسبة مئوية</li>
+      <li>🛡️ وقف خسارة هيكلي + مرن</li>
+      <li>📩 تنبيهات على التليجرام والهاتف</li>
+      <li>🚫 حماية متقدمة + رخصة لكل حساب</li>
+    </ul>
+    <ul class="features" id="features-en" style="display:none;">
+      <li>📊 Capital management by percentage</li>
+      <li>🛡️ Structural + flexible stop loss</li>
+      <li>📩 Telegram and phone alerts</li>
+      <li>🚫 Advanced protection + license per account</li>
+    </ul>
+
+    <div class="price" id="price-ar">
+      السعر: 999 USDT عبر Binance Pay
+    </div>
+    <div class="price" id="price-en" style="display:none;">
+      Price: 999 USDT via Binance Pay
+    </div>
+
+    <div class="payment" id="payment-ar">
+      <p><strong>Pay ID:</strong> <span style="font-size: 18px;">123456789</span></p>
+      <img class="qr" src="https://i.ibb.co/vvr7wbLx/qr.png" alt="Scan to Pay QR">
+      <p>بعد الدفع، أرسل رقم حساب MT4 الخاص بك إلى <strong>@YourTelegram</strong></p>
+    </div>
+    <div class="payment" id="payment-en" style="display:none;">
+      <p><strong>Pay ID:</strong> <span style="font-size: 18px;">123456789</span></p>
+      <img class="qr" src="https://i.ibb.co/vvr7wbLx/qr.png" alt="Scan to Pay QR">
+      <p>After payment, send your MT4 account number to <strong>@YourTelegram</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Golden Trigger EA. All rights reserved.
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      const isArabic = lang === 'ar';
+      document.getElementById('subtitle-ar').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('subtitle-en').style.display = isArabic ? 'none' : 'block';
+      document.getElementById('why-ar').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('why-en').style.display = isArabic ? 'none' : 'block';
+      document.getElementById('features-ar').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('features-en').style.display = isArabic ? 'none' : 'block';
+      document.getElementById('price-ar').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('price-en').style.display = isArabic ? 'none' : 'block';
+      document.getElementById('payment-ar').style.display = isArabic ? 'block' : 'none';
+      document.getElementById('payment-en').style.display = isArabic ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
